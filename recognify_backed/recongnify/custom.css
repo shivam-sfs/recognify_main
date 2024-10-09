@@ -1,0 +1,123 @@
+@media (max-width: 1199px) {
+  .main__heading {
+    font-size: 3.2rem !important;
+    margin-top: 2rem !important;
+  }
+  .center-item .u-text-1 {
+    width: 47rem !important;
+  }
+  .text-width h5 {
+    width: 100% !important;
+    padding: 0 10px !important;
+    margin: 2rem 0 !important;
+  }
+  .u-section-7 .u-list-1 {
+    margin: unset !important;
+  }
+  .Clients-text {
+    width: 100% !important;
+    min-height: 350px !important;
+  }
+  .clients-logo {
+    grid-template-columns: repeat(4, 33.3333%) !important;
+    grid-auto-columns: 25% !important;
+  }
+  .center-item-client {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #carousel_7af9 {
+    padding-bottom: 5rem;
+  }
+  .bg-white {
+    background-color: #fff !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .clients-logo {
+    grid-template-columns: repeat(4, 25%) !important;
+    grid-auto-columns: 20% !important;
+    min-height: 500px !important;
+  }
+  .clients-logo img {
+    object-fit: contain;
+  }
+  .successes-stores h3 {
+    width: 150px !important;
+    text-align: center;
+  }
+  .contect-info {
+    margin-top: 5rem !important;
+  }
+  .contect-form {
+    margin-top: 5rem !important;
+  }
+  .form-container {
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .WhyRecognify {
+    width: 170px !important;
+  }
+  .why-recognify p.u-text-2 {
+    margin-left: unset !important;
+  }
+  .center-item-client {
+    min-height: 947px !important;
+  }
+  .clients-logo {
+    min-height: 241px !important;
+  }
+  .clients-logo > div > div {
+    padding: unset !important;
+  }
+  .clients-logo > div > div img {
+    height: 55px !important;
+  }
+  .form-container {
+    margin-top: 50px !important;
+  }
+  .u-section-1 {
+    min-width: 338px !important;
+    background-image: url(images/playful-carefree-charismatic-redhead-female-with-freckles-long-hair-showing-okay-zero-gescopy.jpg);
+    background-position: 60% 50%;
+  }
+}
+
+.p-1 {
+  padding: 1rem !important;
+}
+.center-item {
+  display: flex;
+  justify-content: center;
+}
+
+h2.u-text.u-text-default.u-text-1.animated.customAnimationIn {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 475px) {
+  .main__heading {
+    width: calc(100vw - 10vw) !important;
+    font-size: 2.8rem !important;
+  }
+  .sub__heading {
+    width: calc(100vw - 10vw) !important;
+    margin-right: 1rem !important;
+  }
+  section#carousel_7af9 {
+    min-width: 338px !important;
+  }
+  .u-section-1 {
+    min-width: 339px !important;
+    background-image: url(images/playful-carefree-charismatic-redhead-female-with-freckles-long-hair-showing-okay-zero-gescopy.jpg);
+    background-position: 70% 50%;
+  }
+}
+
+
