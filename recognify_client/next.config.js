@@ -12,29 +12,29 @@ module.exports = withPWA({
   },
 });
 
-// const nextConfig = {
-//   trailingSlash: true,
-//   output: "export",
-//   // basePath: "/dashboard",
-//   // distDir: "../recognify_backed/public/dashboard",
-//   eslint: {
-//     ignoreDuringBuilds: true,
-//   },
-//   images: {
-//     unoptimized: true,
-//   },
-// };
-
-// module.exports = nextConfig;
-
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  trailingSlash: true,
+  output: "export",
+  basePath: "/dashboard",
+  distDir: "../recognify_backed/public/dashboard",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     unoptimized: true,
-    domains: ["localhost"],
   },
 };
 
 module.exports = nextConfig;
+
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+//   images: {
+//     unoptimized: true,
+//     domains: ["localhost"],
+//   },
+// };
+
+// module.exports = nextConfig;
