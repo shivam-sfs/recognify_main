@@ -13,6 +13,13 @@ const app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
+process.chdir(path.dirname(__filename));
+
+console.log('Working directory set to:', process.cwd());
+// view engine setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "jade");
+
 const allowedOrigins = [
   "http://localhost",
   "http://localhost:4200",
@@ -20,14 +27,19 @@ const allowedOrigins = [
   "http://localhost:3001",
   "http://localhost:8100",
   "http://192.168.1.12:5000/",
-  "http://13.233.159.201:5000",
+  "http://122.168.189.232:5000",
+  "https://122.168.189.232:5000",
   "http://localhost:5000",
 ];
 
 const corsOptions = {
-  // origin: allowedOrigins,
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Add any HTTP methods you expect
+  allowedHeaders: ['Content-Type', 'Authorization'],  // Add expected headers
+  credentials: true,  // If you're handling cookies
 };
-app.use(cors());
+
+app.use(cors(corsOptions));
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
